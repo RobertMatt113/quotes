@@ -1,0 +1,129 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.App{
+  text-align: center;
+}
+
+:root{
+  --pink: rgb(255, 61, 239);
+  --green: rgb(34, 255, 126);
+  --blue: rgb(48, 248, 255);
+  --purple: rgb(183, 2, 255);
+  --darkBlue: rgb(55, 42, 128);
+  --strawberry: rgb(255, 91, 104);
+}
+
+
+.Quote-box{
+  background: white;
+  width: 90%;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px black;
+  padding: 1rem 0 0;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quote-content{
+  display: flex;
+}
+
+.quote-content i{
+  margin: 0 0 0 15px;
+}
+
+.Quote-box .quote-phrase{
+  margin-left: 0.4rem;
+  max-width: 80%;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.Quote-box .quote-author{
+  background: black;
+  color: white;
+  width: 45%;
+  padding: 5px;
+  font-size: 15px;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 8px black;
+
+  position: relative;
+  left: 56%;
+  border-radius: 15px 0 0 15px;
+}
+
+.icon-content{
+  position: relative;
+  left: 94%;
+  top: 2px;
+  
+  box-shadow: 1px 1px 4px black;
+  
+  background-color: rgb(207, 207, 207);
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 0 0 15px 0;
+}
+
+.icon-content button{
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.icon-content button:hover{
+  cursor: pointer;
+}
+
+.icon-content button i{
+  color: white;
+}
+
+@media screen and (min-width: 768px){
+  .Quote-box{
+    background: white;
+    width: 30%;
+    padding: 2rem 0 2rem 2rem;
+  }
+
+  .Quote-box .quote-phrase{
+    font-weight: bold;
+    margin-left: 0.3rem;
+    max-width: 80%;
+    font-size: 20px;
+  }
+
+  .quote-content i{
+    margin: 0 0.3rem;
+  }
+
+  .Quote-box .quote-author{
+    width: 40%;
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    font-weight: bold;
+  
+    position: relative;
+    left: 62%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  
+.icon-content{
+  position: relative;
+  left: 92%;
+  top: 2.2rem;
+  width: 2rem;
+  height: 2rem;
+}
+}
